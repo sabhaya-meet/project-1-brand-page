@@ -1,0 +1,168 @@
+/* ====== GLOBAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ====== LOGO IMAGE ====== */
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ====== HERO IMAGE ====== */
+.heroImaga {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* ====== NAVIGATION ====== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  height: 60px;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background-color: red;
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: calc(100vh - 60px);
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+
+.hero p {
+  font-weight: 600;
+  color: gray;
+  max-width: 400px;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 40px;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: gray;
+  border: 1px solid gray;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .hero-btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btn button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
